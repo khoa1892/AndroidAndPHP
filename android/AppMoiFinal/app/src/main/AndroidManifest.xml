@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khoaluan.appmoifinal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logofinal"
+        android:label="Clinical"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignUp" />
+        </activity>
+        <activity
+            android:name=".Sign"
+            android:label="@string/title_activity_sign"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignUp" />
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Thongtincanhan"
+            android:label="@string/title_activity_thongtincanhan"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Chinhsuataikhoan"
+            android:label="@string/title_activity_chinhsuataikhoan"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".VienPhi"
+            android:label="@string/title_activity_vien_phi"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Chi_Nhanh"
+            android:label="@string/title_activity_chi__nhanh"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".DanhSach"
+            android:label="@string/title_activity_danh_sach"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".KetQuaXetNghiem"
+            android:label="@string/title_activity_ket_qua_xet_nghiem"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".ThoiGianKhamBenh"
+            android:label="@string/title_activity_thoi_gian_kham_benh"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Reminder"
+            android:label="@string/title_activity_reminder"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ThoiGianKhamBenh" />
+        </activity>
+        <activity
+            android:name=".Join"
+            android:label="@string/title_activity_join"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ThoiGianKhamBenh" />
+        </activity>
+    </application>
+</manifest>

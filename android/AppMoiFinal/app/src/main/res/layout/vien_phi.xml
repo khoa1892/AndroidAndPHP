@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demokhoaluan.com.khoaluan.VienPhi">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"></include>
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/app_bar"
+        android:weightSum="5">
+        <TextView
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ Và Tên: "
+            android:id="@+id/textView2"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/kham"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name">
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Khám Bệnh: "
+            android:id="@+id/textView3"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtKham"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/xet"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/kham">
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Xét Nghiệm: "
+            android:id="@+id/textView4"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtXet"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thuoc"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/xet">
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Thuốc: "
+            android:id="@+id/textView5"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtThuoc"
+            android:layout_marginLeft="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thutuc"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/thuoc">
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thủ Tục: "
+            android:id="@+id/textView6"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtThuTuc"
+            android:layout_marginLeft="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/thutuc"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_red_dark"/>
+    <LinearLayout
+        android:id="@+id/tong"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view">
+        <TextView
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng: "
+            android:id="@+id/textView7"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/txtTong"
+            android:layout_marginLeft="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="text"/>
+    </LinearLayout>
+</RelativeLayout>

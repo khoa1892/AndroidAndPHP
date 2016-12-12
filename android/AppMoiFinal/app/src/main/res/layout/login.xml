@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demokhoaluan.com.khoaluan.Login">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clinical Assistants"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:textColor="@color/primaryColor"
+        android:id="@+id/tv"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:hint="username"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUser"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPass"
+        android:layout_below="@+id/etUser"
+        android:layout_alignLeft="@+id/etUser"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/etUser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textColor="@color/primaryColor"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/bLogin"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/etPass"
+        android:layout_alignRight="@+id/etPass" />
+
+
+
+</RelativeLayout>
